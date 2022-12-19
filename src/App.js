@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import AddTodo from './Components/AddTodo';
+import TodosList from './Components/TodosList';
+import Footer from './Components/Footer';
+import { useState } from 'react';
 
 function App() {
+  let [state, changeState] = useState('ALL');
+  function changeFilter(filter) {
+    changeState(filter);
+  }                                      
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='body'>
+      <h1>Todo list</h1>
+      <AddTodo /> <br/>
+      <TodosList  stateFilter={state}/> <br/>
+      <Footer changeVisible = {changeFilter}/>
     </div>
-  );
+  )
 }
-
 export default App;

@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+td, th, table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+h1{
+  text-align: center;
+}
+.table_text{
+  width: 35vw;
+}
+input{
+  border-radius: 3%;
+  border: 1px solid green;
+}
+.body{
+  position: static;
+  width: 60vw;
+  background-color: hsl(312, 10%, 70%);
+  padding-bottom: 10vw;
+}
+
+.add{
+  margin-left: 5vw;
+}
+button{
+  margin-left: 0.5vw;
+  color: blue;
+  border-radius: 10%;
+  background-color: aquamarine;
+}
+input{
+  margin-left: 0.5vw;
+}
+.complited{
+  text-decoration: line-through;
+  background-color: rgb(127, 127, 224);
+  opacity: 0.9;
+}
+.active{
+  background-color: rgb(145, 17, 75);
+}
